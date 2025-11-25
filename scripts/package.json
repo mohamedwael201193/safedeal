@@ -1,0 +1,19 @@
+{
+  "name": "safedeal-scripts",
+  "version": "1.0.0",
+  "description": "Deployment and interaction scripts for SafeDeal",
+  "scripts": {
+    "deploy": "ts-node src/deploy.ts",
+    "interact": "ts-node src/interact.ts"
+  },
+  "dependencies": {
+    "@massalabs/massa-web3": "^5.2.1-dev",
+    "@massalabs/wallet-provider": "^2.0.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}

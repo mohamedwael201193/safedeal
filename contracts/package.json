@@ -1,0 +1,33 @@
+{
+  "name": "safedeal-contracts",
+  "version": "1.0.0",
+  "description": "SafeDeal Autonomous Escrow Smart Contracts for Massa",
+  "type": "module",
+  "scripts": {
+    "build": "massa-as-compile",
+    "clean": "rimraf build"
+  },
+  "devDependencies": {
+    "@massalabs/as-types": "^2.0.0",
+    "@massalabs/massa-as-sdk": "^3.0.2",
+    "@massalabs/massa-sc-compiler": "^0.2.1-dev",
+    "assemblyscript": "^0.27.29",
+    "rimraf": "5.0.5"
+  },
+  "overrides": {
+    "assemblyscript": "0.27.29",
+    "@massalabs/massa-sc-compiler": "0.2.1-dev"
+  },
+  "keywords": [
+    "massa",
+    "smart-contract",
+    "assemblyscript",
+    "escrow",
+    "defi"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@massalabs/sc-standards": "^1.3.0"
+  }
+}

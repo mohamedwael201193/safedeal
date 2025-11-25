@@ -1,0 +1,69 @@
+# ============================================================================
+# SafeDeal - Comprehensive .gitignore
+# ============================================================================
+
+# Node modules
+node_modules/
+**/node_modules/
+
+# Build outputs
+dist/
+build/
+*.wasm
+contracts/build/
+web/dist/
+
+# Environment & Secret files
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+scripts/.env
+web/.env
+contracts/.env
+
+# Private keys and secrets
+**/DEPLOYER_SECRET_KEY*
+**/PRIVATE_KEY*
+deweb_cli_config.json
+
+# Markdown documentation (except README)
+*.md
+!README.md
+
+# Scripts (if they contain sensitive data)
+scripts/src/*.ts
+scripts/src/*.js
+!scripts/src/*.example.ts
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-*
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+*.tmp
+*.temp
+
+# Test artifacts
+coverage/
+.nyc_output/
+test-results/
+
+# Dependency lock files (optional - uncomment if needed)
+# package-lock.json
+# yarn.lock
+# bun.lockb
+

@@ -1,0 +1,37 @@
+{
+  "name": "safedeal",
+  "version": "1.0.0",
+  "description": "Autonomous on-chain escrow for Massa Mainnet",
+  "private": true,
+  "workspaces": [
+    "contracts",
+    "scripts",
+    "web"
+  ],
+  "scripts": {
+    "install:all": "npm install && cd contracts && npm install && cd ../scripts && npm install && cd ../web && npm install",
+    "build:contract": "cd contracts && npm run build",
+    "deploy:contract": "cd scripts && npm run deploy",
+    "interact:contract": "cd scripts && npm run interact",
+    "dev:web": "cd web && npm run dev",
+    "build:web": "cd web && npm run build",
+    "preview:web": "cd web && npm run preview",
+    "deploy:deweb": "cd web && npm run deploy:deweb",
+    "test:all": "npm run build:contract && npm run interact:contract",
+    "setup": "npm run install:all && npm run build:contract"
+  },
+  "keywords": [
+    "massa",
+    "blockchain",
+    "escrow",
+    "defi",
+    "autonomous-smart-contracts",
+    "deweb"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}
